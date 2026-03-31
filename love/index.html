@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Для тебя ♡</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Основная карточка */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Анимация сердечек */
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: float 4s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-80px) scale(1.2); opacity: 0.8; }
+    100% { transform: translateY(-160px) scale(1); opacity: 0; }
+}
+
+/* Фото */
+.photo-frame {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 2px solid #ff6b9d;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Текст */
+.text-frame {
+    background: #ffe6f0;
+    border-radius: 20px;
+    padding: 15px;
+    color: #d6336c;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Заголовок */
+h1 {
+    color: #ff3b7f;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Кнопка презентации */
+button {
+    background: #ff3b7f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    background: #ff1a5c;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Сердечки сверху -->
+    <div class="heart" style="left: 10%;">❤</div>
+    <div class="heart" style="left: 30%; animation-delay: 1s;">❤</div>
+    <div class="heart" style="left: 60%; animation-delay: 2s;">❤</div>
+    <div class="heart" style="left: 80%; animation-delay: 0.5s;">❤</div>
+
+    <h1>Зайка привет♡</h1>
+
+    <!-- Фото -->
+    <div class="photo-frame">
+       <img src="asya.jpg" alt="Фото">
+    </div>
+
+    <!-- Текст -->
+    <div class="text-frame">
+        Ты невероятная зайка<3 <br>
+        И ты вдохновляешь меня жить и радоваться каждый божий день♡
+    </div>
+
+    <!-- Кнопка презентации -->
+    <a href="presentation.pdf" target="_blank" rel="noopener noreferrer">
+        <button>Мои чуства всегда открыты к тебе♡</button>
+    </a>
+</div>
+
+</body>
+</html>
